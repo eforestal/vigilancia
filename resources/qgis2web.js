@@ -69,7 +69,7 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1
+        extent: [-914078.906644, 4859300.101297, -72975.052224, 5362769.358836], maxZoom: 28, minZoom: 1
     })
 });
 
@@ -77,7 +77,7 @@ var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
     var searchLayer = new SearchLayer({
-      layer: lyr_TORRESINCENDIOS_3,
+      layer: lyr_TORRESINCENDIOS_4,
       colName: 'TORRE',
       zoom: 10,
       collapsed: true,
